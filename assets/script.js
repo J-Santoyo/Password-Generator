@@ -18,4 +18,10 @@ function passwordGenerator( length ) {
     var string = "abcdefghijklmnopqrstuvwxyz"; //allows it to grab all 26 letters
     var numeric = '0123456789'; //allows for selection of numbers
     var punctuation = '!@#$%^&*()_+~`|}{[]\:;?><,./-='; //grabs special characters
+    var password = "";
+    var character = "";
+    while( password.length<length ) {
+        letters =
+        numbers = 
+        chars = 
 }
