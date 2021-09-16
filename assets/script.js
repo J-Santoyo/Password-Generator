@@ -31,4 +31,7 @@ function passwordGenerator( length ) {
         character += punctuation.charAt( chars );
         password = character;
     }
+    password=password.split('').sort(function(){return 0.5-Math.random()}).join('');
+    return password.substr(0,length);
     }
+    console.log( passwordGenerator() );
