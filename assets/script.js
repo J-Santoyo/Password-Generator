@@ -26,4 +26,9 @@ function passwordGenerator( length ) {
         chars = Math.ceil(punctuation.length * Math.random()*Math.random());
         hold = string.charAt( letters );
         hold = (password.length%2==0)?(hold.toUpperCase()):(hold); //forces some selected chars to Upper
-}
+        character += hold;
+        character += numeric.charAt( numbers );
+        character += punctuation.charAt( chars );
+        password = character;
+    }
+    }
