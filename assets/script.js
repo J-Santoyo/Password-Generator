@@ -21,7 +21,9 @@ function passwordGenerator( length ) {
     var password = "";
     var character = "";
     while( password.length<length ) {
-        letters =
-        numbers = 
-        chars = 
+        letters = Math.ceil(string.length * Math.random()*Math.random());
+        numbers = Math.ceil(numeric.length * Math.random()*Math.random());
+        chars = Math.ceil(punctuation.length * Math.random()*Math.random());
+        hold = string.charAt( letters );
+        hold = (password.length%2==0)?(hold.toUpperCase()):(hold); //forces some selected chars to Upper
 }
