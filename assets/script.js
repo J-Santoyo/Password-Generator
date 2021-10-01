@@ -16,6 +16,10 @@ generateBtn.addEventListener("click", writePassword);
 function passwordGenerator(length) {
   var length = prompt("How long do you want the password to be?")
   length = (length) ? (length) : (13);
+  if (length < 8 || length > 128) {
+    alert("Password length needs to be between 8 and 128 characters!")
+    return;
+  }
   var string = "abcdefghijklmnopqrstuvwxyz"; //allows it to grab all 26 letters
   var numeric = '0123456789'; //allows for selection of numbers
   var special = '!@#$%^&*()_+~`|}{[]\:;?><,./-='; //grabs special characters
@@ -37,6 +41,10 @@ function passwordGenerator(length) {
   }
   if (wantSpecial) {
     characters = characters+special
+  }
+  if (characters.length===0) {
+    alert("You must pick at least one!")
+    return;
   }
 
   while (password.length < length) {
