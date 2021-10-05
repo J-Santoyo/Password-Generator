@@ -16,4 +16,18 @@ THEN I select which criteria to include in the password
 WHEN prompted for the length of the password
 THEN I choose the length of at least 8 characters and no more than 128 characters
 WHEN asked for character types to include in the password
+THEN I select whether I want to include lowercase, uppercase, numbers, and/or special characters
+WHEN going through each prompt
+THEN the input is validated and at least one type of character needs to be selected
+WHEN all prompts are answered
+THEN a password will be generated that will match the selected criteria
+WHEN the password has been generated 
+THEN the password will be displayed inside box able to be copied.
+
+## Mock-Up
+
+This image shows the web application's appearance and functionality:
+
+
+
 
