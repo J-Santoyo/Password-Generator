@@ -28,6 +28,6 @@ THEN the password will be displayed inside box able to be copied.
 
 This image shows the web application's appearance and functionality:
 
-
+![Application Functionality] (https://J-Santoyo.github.io/Password-Generator/)
 
 
